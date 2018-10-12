@@ -78,7 +78,37 @@ body {
 .skip_btn:hover, .find_out_btn:hover {
     box-shadow: 6px 6px 10px rgba(0,0,0,0.2);
 }
-
+.question_progress_bar {
+    height: 4px;
+    position: relative;
+    background: #cecece;
+}
+.question_progress_bar i {
+    position: absolute;
+    left: 0;
+    top: -12px;
+    color: #cecece;
+    background: #f0f0f0;
+    font-size: 24px;
+    padding: 0 10px;
+}
+.question_progress_bar span {
+    position: absolute;
+    height: 4px;
+    width: 30%;
+    background: #c0de5c;
+}
+.question_progress_bar:after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 10px;
+    background: #cecece;
+    right: 0;
+    top: -3px;
+    border-radius: 13px;
+}
 
 /* The container */
 .question_check {
