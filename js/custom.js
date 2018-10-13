@@ -6,7 +6,10 @@ $(document).ready(function(){
     $('.find_out_btn').click(function(){
         $(".question_footer, .step1").hide();
        	$(".success_footer, .step2").show();
-       	$('.question_progress_bar span').css('width','50%')
+       	$('.question_progress_bar span').css('width','50%');
+
+       	var val = $(".progress_block").attr('val')
+
 	    $('.second').circleProgress({
 			value: val,
 			startAngle: 4.7,
@@ -15,12 +18,14 @@ $(document).ready(function(){
 			  gradientDirection: [0, 0, 120, 30] 
 			}
 		});
-    
+    });
+
+    $('.skip_btn').click(function(){
+        $(".skip_btn, .step1").hide();
+       	$(".step3").show();
     });
 
 
-});
 
-console.log(Math.PI);
-var val = $(".second").attr("val");
+});
 

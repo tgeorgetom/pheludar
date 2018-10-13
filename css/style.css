@@ -67,8 +67,15 @@ body {
     right: 0;
     z-index: 999;
 }
-.step2{
+.step2, .step3{
     display: none;
+}
+.step3 .question_grid_img {
+    padding: 20px;
+}
+
+.step3 .ans_input {
+    border: none;
 }
 .progress_result .progress_block {
     margin: 15px;
